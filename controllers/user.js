@@ -1,13 +1,15 @@
 'use strict';
 var bcrypt = require("bcrypt-nodejs");
-var User = require('../models/user');
+var user_1 = require("../models/user");
+//var User = require('../models/user');
 function pruebas(req, res) {
     res.status(200).send({
         message: "controlador de usuarios de la aplicación de música de MongoDB"
     });
 }
+exports.pruebas = pruebas;
 function saveUser(req, res) {
-    var user = new User();
+    var user = new user_1.User();
     var params = req.body;
     console.log(params);
     user.name = params.name;
@@ -16,6 +18,7 @@ function saveUser(req, res) {
     user.role = 'ROLE_USER';
     user.image = null;
     var salt = bcrypt.genSaltSync(10);
+    console.log(salt);
     if (params.password) {
         // Encriptar contraseña y guardar datos
         bcrypt.hash(params.password, salt, function () { }, function (err, hash) {
@@ -24,29 +27,36 @@ function saveUser(req, res) {
                 // Guardar el usuario
                 user.save(function (err, userStored) {
                     if (err) {
-                        res.status(500).send({ message: "Error al guardar el usuario" });
+                        res.status(500).send({
+                            message: "Error al guardar el usuario"
+                        });
                     }
                     else {
                         if (!userStored) {
-                            res.status(404).send({ message: "No se ha registrado el usuario" });
+                            res.status(404).send({
+                                message: "No se ha registrado el usuario"
+                            });
                         }
                         else {
-                            res.status(200).send({ user: userStored });
+                            res.status(200).send({
+                                user: userStored
+                            });
                         }
                     }
                 });
             }
             else {
-                res.status(200).send({ message: "Introducir todos los datos" });
+                res.status(200).send({
+                    message: "Introducir todos los datos"
+                });
             }
         });
     }
     else {
-        res.status(200).send({ message: "Introducir contraseña" });
+        res.status(200).send({
+            message: "Introducir contraseña"
+        });
     }
 }
-module.exports = {
-    pruebas: pruebas,
-    saveUser: saveUser
-};
+exports.saveUser = saveUser;
 //# sourceMappingURL=user.js.map

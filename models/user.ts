@@ -12,4 +12,5 @@ var UserSchema = Schema({
     image: String
 });
 
-module.exports = mongoose.model('User', UserSchema);
+var User = mongoose.model('User', UserSchema);
+export {User};

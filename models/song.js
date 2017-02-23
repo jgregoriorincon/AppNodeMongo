@@ -6,7 +6,10 @@ var SongSchema = Schema({
     name: String,
     duration: Number,
     file: String,
-    artist: { type: Schema.ObjectId, ref: 'Album' }
+    artist: {
+        type: Schema.ObjectId,
+        ref: 'Album'
+    }
 });
 module.exports = mongoose.model('Song', SongSchema);
 //# sourceMappingURL=song.js.map

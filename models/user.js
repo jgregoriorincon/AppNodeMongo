@@ -9,5 +9,6 @@ var UserSchema = Schema({
     role: String,
     image: String
 });
-module.exports = mongoose.model('User', UserSchema);
+var User = mongoose.model('User', UserSchema);
+exports.User = User;
 //# sourceMappingURL=user.js.map

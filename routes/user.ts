@@ -1,10 +1,12 @@
 'use strict'
 
-var express = require('express');
-var UserController = require('../controllers/user');
+import * as express from 'express';
+import { pruebas, saveUser } from "../controllers/user";
+//var UserController = require('../controllers/user');
 
 var api = express.Router();
 
-api.get('/probando-controlador', UserController.pruebas);
-api.post('/register', UserController.saveUser);
-module.exports = api;
+api.get('/probando-controlador', pruebas);
+api.post('/register', saveUser);
+
+export { api };
