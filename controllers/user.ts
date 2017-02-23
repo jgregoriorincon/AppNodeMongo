@@ -1,6 +1,7 @@
 'use strict'
 
-var bcrypt =require('bcrypt-nodejs');
+import * as bcrypt from 'bcrypt-nodejs'
+
 var User = require('../models/user');
 
 function pruebas(req, res){
@@ -21,9 +22,11 @@ function saveUser(req, res) {
     user.role = 'ROLE_USER';
     user.image = null;
 
+    var salt = bcrypt.genSaltSync(10);
+
     if (params.password){
         // Encriptar contraseña y guardar datos
-        bcrypt.hash(params.password, null, null, function(err, hash){
+        bcrypt.hash(params.password, salt, function(){}, function(err, hash){
             user.password = hash;
             if (user.name !== null && user.surname !== null && user.email !== null) {
                 // Guardar el usuario

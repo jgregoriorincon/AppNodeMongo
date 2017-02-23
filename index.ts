@@ -1,6 +1,8 @@
 "use strict"
 
-var mongoose = require('mongoose');
+import * as mongoose from 'mongoose';
+
+//var mongoose = require('mongoose');
 var app = require('./app');
 var port = process.env.PORT || 3977;
 

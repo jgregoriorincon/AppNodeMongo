@@ -1,6 +1,6 @@
 'use strict'
 
-var mongoose = require('mongoose');
+import * as mongoose from 'mongoose';
 var Schema = mongoose.Schema;
 
 var ArtistSchema = Schema({
