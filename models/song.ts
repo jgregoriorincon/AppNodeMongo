@@ -3,13 +3,13 @@
 import * as mongoose from 'mongoose';
 var Schema = mongoose.Schema;
 
-var SongSchema = Schema({
+var SongSchema = new Schema({
     number: Number,
     name: String,
     duration: Number,
     file: String,
     artist: {
-        type: Schema.ObjectId,
+        type: Schema.Types.ObjectId,
         ref: 'Album'
     }
 });

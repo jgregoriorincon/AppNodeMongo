@@ -1,8 +1,8 @@
 'use strict'
 
 import * as bcrypt from 'bcrypt-nodejs'
-import {User} from '../models/user';
-//var User = require('../models/user');
+//import {User} from '../models/user';
+var User = require('../models/user');
 
 function pruebas(req, res) {
     res.status(200).send({
@@ -11,7 +11,7 @@ function pruebas(req, res) {
 }
 
 function saveUser(req, res) {
-    var user = new User();
+    var user = User();
 
     var params = req.body;
     console.log(params);
@@ -61,7 +61,7 @@ function saveUser(req, res) {
             message: "Introducir contraseña"
         });
     }
-
+    
 }
 
 export {

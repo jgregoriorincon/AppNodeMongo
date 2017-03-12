@@ -3,7 +3,7 @@
 import * as mongoose from 'mongoose';
 var Schema = mongoose.Schema;
 
-var ArtistSchema = Schema({
+var ArtistSchema = new Schema({
     name: String,
     description: String,
     image: String
