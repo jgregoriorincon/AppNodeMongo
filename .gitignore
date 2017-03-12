@@ -38,3 +38,9 @@ jspm_packages
 
 # Archivos ocultos Mac
 .DS_Store
+
+#JavaScript Compilado
+*.js
+
+#Maps JavaScript
+*.js.map
