@@ -1,4 +1,5 @@
 'use strict';
+Object.defineProperty(exports, "__esModule", { value: true });
 var bcrypt = require("bcrypt-nodejs");
 var user_1 = require("../models/user");
 //var User = require('../models/user');
