@@ -4,12 +4,12 @@ import * as bcrypt from 'bcrypt-nodejs';
 import {User} from '../models/user';
 import {createToken} from '../services/jwt';
 
-function getToken(req, res) {
+export function getToken(req, res) {
     var params = req.body;
     res.status(200).send({message: 'Ingreso al token'});
 }
 
-function saveUser(req, res) {
+export function saveUser(req, res) {
     var user = new User();
 
     var params = req.body;
@@ -61,7 +61,7 @@ function saveUser(req, res) {
 
 }
 
-function loginUser(req, res) {
+export function loginUser(req, res) {
     var params = req.body;
 
     var email = params.email;
@@ -99,8 +99,19 @@ function loginUser(req, res) {
     });
 }
 
-export { 
-    getToken,
-    saveUser,
-    loginUser
-};
+export function updateUser(req, res) {
+    var userId = req.params.id;
+    var update = req.body;
+
+    User.findByIdAndUpdate(userId, update, (err, userUpdate) => {
+        if (err) {
+            res.status(500).send({message: 'Error al actualizar el usuario'});
+        } else {
+            if (!userUpdate) {
+                res.status(404).send({message: 'No se ha podido actualizar el usuario'});
+            } else {
+                res.status(200).send({user: update});
+            }
+        }
+    }); 
+}
