@@ -4,6 +4,11 @@ import * as bcrypt from 'bcrypt-nodejs';
 import {User} from '../models/user';
 import {createToken} from '../services/jwt';
 
+function getToken(req, res) {
+    var params = req.body;
+    res.status(200).send({message: 'Ingreso al token'});
+}
+
 function saveUser(req, res) {
     var user = new User();
 
@@ -95,6 +100,7 @@ function loginUser(req, res) {
 }
 
 export { 
+    getToken,
     saveUser,
     loginUser
 };
