@@ -1,6 +1,8 @@
 'use strict'
 
 import * as mongoose from 'mongoose';
+mongoose.Promise = require('bluebird');
+
 var Schema = mongoose.Schema;
 
 var UserSchema = Schema({

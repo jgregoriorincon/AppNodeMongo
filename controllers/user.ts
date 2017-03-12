@@ -1,14 +1,7 @@
 'use strict'
 
-import * as bcrypt from 'bcrypt-nodejs'
+import * as bcrypt from 'bcrypt-nodejs';
 import {User} from '../models/user';
-//var User = require('../models/user');
-
-function pruebas(req, res) {
-    res.status(200).send({
-        message: "controlador de usuarios de la aplicación de música de MongoDB"
-    });
-}
 
 function saveUser(req, res) {
     var user = new User();
@@ -23,8 +16,6 @@ function saveUser(req, res) {
     user.image = null;
 
     var salt = bcrypt.genSaltSync(10);
-
-    console.log(salt);
 
     if (params.password) {
         // Encriptar contraseña y guardar datos
@@ -64,7 +55,43 @@ function saveUser(req, res) {
 
 }
 
-export {
-    pruebas,
-    saveUser
+function loginUser(req, res) {
+    var params = req.body;
+
+    var email = params.email;
+    var password = params.password;
+
+    User.findOne({email:email.toLowerCase()}, (err,user) => {
+        if (err) {
+            res.status(500).send({message: 'Error en la petición'});
+        }
+        else{
+            if (!user) {
+                res.status(404).send({message: 'El usuario no existe'});
+            }
+            else {
+                // Comprobar contraseña
+                bcrypt.compare(password, user.password, (err, check) => {
+                    if (check) {
+                        // Devolver los datos del usuario logueado
+                        if (params.gethash) {
+                            // Devolver el token del usuario usando jwt
+                        }
+                        else {
+                            console.log("Se envian los datos del usuario");
+                            res.status(200).send({user});
+                        }
+                    }
+                    else {
+                        res.status(404).send({message: 'El usuario no ha podido loguearse'});
+                    }
+                });
+            }
+        }
+    });
+}
+
+export { 
+    saveUser,
+    loginUser
 };
