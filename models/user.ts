@@ -1,32 +1,18 @@
 'use strict'
 
-import {
-    Document,
-    model,
-    Model,
-    Schema
-} from 'mongoose';
+import * as mongoose from 'mongoose';
+mongoose.Promise = require('bluebird');
 
-var UserSchema: Schema = new Schema({
+var Schema = mongoose.Schema;
+
+var UserSchema = new Schema({
     name: String,
     surname: String,
-    email: {
-        type: String,
-        required: true,
-        unique: true
-    },
+    email: String,
     password: String,
     role: String,
     image: String
 });
 
-interface IUser extends Document {
-    name: String;
-    surname: String;
-    email: String;
-    password: String;
-    role: String;
-    image: String;
-}
-
-export var UserModel: Model < IUser > = model < IUser > ('User', UserSchema);
+var User = mongoose.model('User', UserSchema);
+export {User};

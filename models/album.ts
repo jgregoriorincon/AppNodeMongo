@@ -1,24 +1,19 @@
 'use strict'
 
-import {Document, model, Model, Schema} from 'mongoose';
+import * as mongoose from 'mongoose';
+mongoose.Promise = require('bluebird');
 
-var AlbumSchema:Schema = new Schema({
+var Schema = mongoose.Schema;
+
+var AlbumSchema = Schema({
     title: String,
     description: String,
     year: Number,
     image: String,
     artist: {
-        type: Schema.Types.ObjectId,
+        type: Schema.ObjectId,
         ref: 'Artist'
     }
 });
 
-interface IAlbum extends Document {
-    title: String;
-    description: String;
-    year: Number;
-    image: String;
-    artist: Schema.Types.ObjectId;
-}
-
-export var AlbumModel: Model<IAlbum> = model<IAlbum>('Album', AlbumSchema);
+module.exports = mongoose.model('Album', AlbumSchema);

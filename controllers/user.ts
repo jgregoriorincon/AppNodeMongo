@@ -1,7 +1,7 @@
 'use strict'
 
 import * as bcrypt from 'bcrypt-nodejs';
-import {UserModel as User} from '../models/user';
+import {User} from '../models/user';
 import {createToken} from '../services/jwt';
 
 export function getToken(req, res) {
