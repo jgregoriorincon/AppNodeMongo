@@ -13,7 +13,6 @@ export function saveUser(req, res) {
     var user = new User();
 
     var params = req.body;
-    console.log(params);
 
     user.name = params.name;
     user.surname = params.surname;
@@ -32,7 +31,7 @@ export function saveUser(req, res) {
                 user.save((err, userStored) => {
                     if (err) {
                         res.status(500).send({
-                            message: "Error al guardar el usuario / usuario ya existe"
+                            message: "Error al guardar el usuario"
                         });
                     } else {
                         if (!userStored) {
