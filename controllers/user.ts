@@ -1,7 +1,7 @@
 'use strict'
 
 import * as bcrypt from 'bcrypt-nodejs';
-import {User} from '../models/user';
+import {UserModel as User} from '../models/user';
 import {createToken} from '../services/jwt';
 
 export function getToken(req, res) {
@@ -19,7 +19,7 @@ export function saveUser(req, res) {
     user.surname = params.surname;
     user.email = params.email.toLowerCase();
     user.role = 'ROLE_USER';
-    user.image = null;
+    user.image = 'null';
 
     var salt = bcrypt.genSaltSync(10);
 
@@ -32,7 +32,7 @@ export function saveUser(req, res) {
                 user.save((err, userStored) => {
                     if (err) {
                         res.status(500).send({
-                            message: "Error al guardar el usuario"
+                            message: "Error al guardar el usuario / usuario ya existe"
                         });
                     } else {
                         if (!userStored) {
@@ -77,7 +77,7 @@ export function loginUser(req, res) {
             }
             else {
                 // Comprobar contraseña
-                bcrypt.compare(password, user.password, (err, check) => {
+                bcrypt.compare(password, user.password.toString(), (err, check) => {
                     if (check) {
                         // Devolver los datos del usuario logueado
                         if (params.getHash) {
@@ -110,7 +110,7 @@ export function updateUser(req, res) {
             if (!userUpdate) {
                 res.status(404).send({message: 'No se ha podido actualizar el usuario'});
             } else {
-                res.status(200).send({user: update});
+                res.status(200).send({user: userUpdate});
             }
         }
     }); 
