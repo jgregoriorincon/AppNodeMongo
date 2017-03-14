@@ -5,7 +5,7 @@ mongoose.Promise = require('bluebird');
 
 var Schema = mongoose.Schema;
 
-var AlbumSchema = Schema({
+var AlbumSchema = new Schema({
     title: String,
     description: String,
     year: Number,

@@ -3,14 +3,18 @@
 import * as bcrypt from 'bcrypt-nodejs';
 import {User} from '../models/user';
 import {createToken} from '../services/jwt';
+import * as fs from 'fs';
+import * as path from 'path';
 
 export function getToken(req, res) {
     var params = req.body;
-    res.status(200).send({message: 'Ingreso al token'});
+    res.status(200).send({
+        message: 'Ingreso al token'
+    });
 }
 
 export function saveUser(req, res) {
-    var user = new User();
+    var user = User();
 
     var params = req.body;
 
@@ -66,15 +70,19 @@ export function loginUser(req, res) {
     var email = params.email;
     var password = params.password;
 
-    User.findOne({email:email.toLowerCase()}, (err,user) => {
+    User.findOne({
+        email: email.toLowerCase()
+    }, (err, user) => {
         if (err) {
-            res.status(500).send({message: 'Error en la petición'});
-        }
-        else{
+            res.status(500).send({
+                message: 'Error en la petición'
+            });
+        } else {
             if (!user) {
-                res.status(404).send({message: 'El usuario no existe'});
-            }
-            else {
+                res.status(404).send({
+                    message: 'El usuario no existe'
+                });
+            } else {
                 // Comprobar contraseña
                 bcrypt.compare(password, user.password.toString(), (err, check) => {
                     if (check) {
@@ -84,13 +92,15 @@ export function loginUser(req, res) {
                             res.status(200).send({
                                 token: createToken(user)
                             })
+                        } else {
+                            res.status(200).send({
+                                user
+                            });
                         }
-                        else {
-                            res.status(200).send({user});
-                        }
-                    }
-                    else {
-                        res.status(404).send({message: 'El usuario no ha podido loguearse'});
+                    } else {
+                        res.status(404).send({
+                            message: 'El usuario no ha podido loguearse'
+                        });
                     }
                 });
             }
@@ -104,13 +114,81 @@ export function updateUser(req, res) {
 
     User.findByIdAndUpdate(userId, update, (err, userUpdate) => {
         if (err) {
-            res.status(500).send({message: 'Error al actualizar el usuario'});
+            res.status(500).send({
+                message: 'Error al actualizar el usuario'
+            });
         } else {
             if (!userUpdate) {
-                res.status(404).send({message: 'No se ha podido actualizar el usuario'});
+                res.status(404).send({
+                    message: 'No se ha podido actualizar el usuario'
+                });
             } else {
-                res.status(200).send({user: userUpdate});
+                res.status(200).send({
+                    user: userUpdate
+                });
             }
         }
-    }); 
+    });
+}
+
+export function uploadImage(req, res) {
+    var userId = req.params.id;
+
+    if (req.files) {
+        let filePath = req.files.image.path;
+        let filePathSplit = filePath.split('/');
+        let fileName = filePathSplit[filePathSplit.length - 1];
+        let fileNameSplit = fileName.split('.');
+        let fileExt = fileNameSplit[fileNameSplit.length - 1].toLowerCase();
+
+        switch (fileExt) {
+            case 'jpg':
+            case 'jpeg':
+            case 'png':
+            case 'gif':
+                User.findByIdAndUpdate(userId, {image: fileName}, (err, userUpdate) => {
+                    if (err) {
+                        res.status(500).send({
+                            message: 'Error al actualizar el usuario'
+                        });
+                    } else {
+                        if (!userUpdate) {
+                            res.status(404).send({
+                                message: 'No se ha podido actualizar el usuario'
+                            });
+                        } else {
+                            res.status(200).send({
+                                user: userUpdate
+                            });
+                        }
+                    }
+                });
+                break;
+            default:
+                res.status(500).send({
+                    message: 'Extensión del archivo no valida'
+                });
+        }
+
+        console.log(filePath);
+        console.log(fileName);
+
+    } else {
+        res.status(500).send({
+            message: 'No se ha cargado imagen'
+        });
+    }
+}
+
+export function getImageFile (req, res) {
+    var imageFile = req.params.imageFile;
+    var pathFile = './uploads/users/' + imageFile;
+
+    fs.exists(pathFile, (exists) => {
+        if (exists) {
+            res.sendFile(path.resolve(pathFile));
+        } else {
+            res.status(200).send({message: 'No existe la imagen'});
+        }
+    });
 }
