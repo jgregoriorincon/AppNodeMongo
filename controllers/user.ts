@@ -1,10 +1,10 @@
 'use strict'
 
 import * as bcrypt from 'bcrypt-nodejs';
-import {User} from '../models/user';
-import {createToken} from '../services/jwt';
 import * as fs from 'fs';
 import * as path from 'path';
+import {User} from '../models/user';
+import {createToken} from '../services/jwt';
 
 export function getToken(req, res) {
     var params = req.body;

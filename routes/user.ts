@@ -1,9 +1,9 @@
 'use strict'
 
 import * as express from 'express';
+import * as multipart from 'connect-multiparty';
 import * as userController from "../controllers/user";
 import {ensureAuth as md_auth} from '../middlewares/authenticated';
-import * as multipart from 'connect-multiparty';
 
 var api = express.Router();
 var md_upload = multipart({uploadDir: './uploads/users'});
