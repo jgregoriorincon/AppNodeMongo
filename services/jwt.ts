@@ -5,7 +5,14 @@ import * as moment from 'moment';
 
 var secret = 'Cl4v3.D3.3ncr1pt4m13nt0';
 
-export var createToken = function (user) {
+/**
+ * Recupera los datos del usuario, asigna la vigencia del token y los encripta
+ * 
+ * @export
+ * @param {any} user 
+ * @returns 
+ */
+export function createToken(user) {
     var payLoad = {
         sub: user._id,
         name: user.name,
@@ -19,8 +26,3 @@ export var createToken = function (user) {
 
     return jwt.encode(payLoad, secret);
 }
-
-/*
-export {
-    createToken
-}*/

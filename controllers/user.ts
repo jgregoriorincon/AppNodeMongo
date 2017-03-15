@@ -3,9 +3,16 @@
 import * as bcrypt from 'bcrypt-nodejs';
 import * as fs from 'fs';
 import * as path from 'path';
-import {User} from '../models/user';
+import {UserModel as User} from '../models/user';
 import {createToken} from '../services/jwt';
 
+/**
+ * Valida el token enviado por /getToken
+ * 
+ * @export
+ * @param {any} req Datos enviados desde el cliente a través de la API
+ * @param {any} res Respuesta generada por los servicios
+ */
 export function getToken(req, res) {
     var params = req.body;
     res.status(200).send({
@@ -13,23 +20,43 @@ export function getToken(req, res) {
     });
 }
 
+/**
+ * Salva el usuario enviado a la BD 
+ * 
+ * @export
+ * @param {any} req Datos enviados desde el cliente a través de la API
+ * @param {any} res Respuesta generada por los servicios
+ */
 export function saveUser(req, res) {
-    var user = User();
+    /**
+    * Consume el Schema de usuario de la BD 
+    */
+    var user = new User();
 
     var params = req.body;
 
+    /**
+    * Asigna los parametros enviados por /register al Schema 
+    */
     user.name = params.name;
     user.surname = params.surname;
     user.email = params.email.toLowerCase();
     user.role = 'ROLE_USER';
     user.image = 'null';
 
-    var salt = bcrypt.genSaltSync(10);
-
+    /**
+    * Si se envia contraseña se continua
+    */
     if (params.password) {
-        // Encriptar contraseña y guardar datos
+        /**
+        * Se define la base del encriptado 
+        */
+        let salt = bcrypt.genSaltSync(10);
         bcrypt.hash(params.password, salt, function () {}, function (err, hash) {
             user.password = hash;
+            /**
+            * Valida que los parametros no vengan nulos
+            */
             if (user.name !== null && user.surname !== null && user.email !== null) {
                 // Guardar el usuario
                 user.save((err, userStored) => {
@@ -61,15 +88,22 @@ export function saveUser(req, res) {
             message: "Introducir contraseña"
         });
     }
-
 }
 
+/**
+ * valida los datos enviados contra los almacenados en la BD y valida la contraseña
+ * 
+ * @export
+ * @param {any} req Datos enviados desde el cliente a través de la API
+ * @param {any} res Respuesta generada por los servicios
+ */
 export function loginUser(req, res) {
     var params = req.body;
 
     var email = params.email;
     var password = params.password;
 
+    // Busca un registro en la BD por el correo electronico
     User.findOne({
         email: email.toLowerCase()
     }, (err, user) => {
@@ -83,7 +117,7 @@ export function loginUser(req, res) {
                     message: 'El usuario no existe'
                 });
             } else {
-                // Comprobar contraseña
+                // Comprueba la contraseña
                 bcrypt.compare(password, user.password.toString(), (err, check) => {
                     if (check) {
                         // Devolver los datos del usuario logueado
@@ -108,10 +142,18 @@ export function loginUser(req, res) {
     });
 }
 
+/**
+ * Actualiza los datos del usuario en la BD
+ * 
+ * @export
+ * @param {any} req Datos enviados desde el cliente a través de la API
+ * @param {any} res Respuesta generada por los servicios
+ */
 export function updateUser(req, res) {
     var userId = req.params.id;
     var update = req.body;
 
+    // Busca en la BD por el Id recuperado al hacer el login 
     User.findByIdAndUpdate(userId, update, (err, userUpdate) => {
         if (err) {
             res.status(500).send({
@@ -131,21 +173,32 @@ export function updateUser(req, res) {
     });
 }
 
+/**
+ * Carga una imagen a la ruta definida y actualiza la BD con el nombre de la imagen
+ * 
+ * @export
+ * @param {any} req Datos enviados desde el cliente a través de la API
+ * @param {any} res Respuesta generada por los servicios
+ */
 export function uploadImage(req, res) {
     var userId = req.params.id;
 
+    // si llegan archivos por /uploadImageUser/:id
     if (req.files) {
+        // Recupera la ruta, el nombre del archivo y de la Extensión
         let filePath = req.files.image.path;
         let filePathSplit = filePath.split('/');
         let fileName = filePathSplit[filePathSplit.length - 1];
         let fileNameSplit = fileName.split('.');
         let fileExt = fileNameSplit[fileNameSplit.length - 1].toLowerCase();
 
+        // Valida el tipo de extensión de la imagen
         switch (fileExt) {
             case 'jpg':
             case 'jpeg':
             case 'png':
             case 'gif':
+                // Busca el usuario y actualiza el campo image
                 User.findByIdAndUpdate(userId, {image: fileName}, (err, userUpdate) => {
                     if (err) {
                         res.status(500).send({
@@ -169,10 +222,6 @@ export function uploadImage(req, res) {
                     message: 'Extensión del archivo no valida'
                 });
         }
-
-        console.log(filePath);
-        console.log(fileName);
-
     } else {
         res.status(500).send({
             message: 'No se ha cargado imagen'
@@ -180,10 +229,18 @@ export function uploadImage(req, res) {
     }
 }
 
+/**
+ * Recupera la imagen del avatar desde la ruta, usando el Id
+ * 
+ * @export
+ * @param {any} req Datos enviados desde el cliente a través de la API
+ * @param {any} res Respuesta generada por los servicios
+ */
 export function getImageFile (req, res) {
     var imageFile = req.params.imageFile;
     var pathFile = './uploads/users/' + imageFile;
 
+    // Valida si el archivo especificado en la BD existe en la ruta
     fs.exists(pathFile, (exists) => {
         if (exists) {
             res.sendFile(path.resolve(pathFile));

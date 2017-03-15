@@ -1,11 +1,8 @@
 'use strict'
 
-import * as mongoose from 'mongoose';
-//mongoose.Promise = require('bluebird');
+import {Document, model, Model, Schema} from 'mongoose';
 
-var Schema = mongoose.Schema;
-
-var SongSchema = new Schema({
+export const SongSchema: Schema = new Schema({
     number: Number,
     name: String,
     duration: Number,
@@ -16,4 +13,12 @@ var SongSchema = new Schema({
     }
 });
 
-module.exports = mongoose.model('Song', SongSchema);
+export interface ISong extends Document {
+    number: Number;
+    name: String;
+    duration: Number;
+    file: String;
+    artist: Schema.Types.ObjectId;
+}
+
+export const SongModel: Model<ISong> = model<ISong>('Song', SongSchema);
