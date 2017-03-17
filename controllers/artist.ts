@@ -101,7 +101,7 @@ export function getAllArtists(req, res) {
 
     console.log(options);
 
-    Artist.paginate(query, options, function (err, result) {
+    Artist.paginate(query, options, function (err, artists) {
         if (err) {
             res.status(500).send({
                 message: 'Error al realizar la petición'
@@ -112,8 +112,10 @@ export function getAllArtists(req, res) {
                     message: 'No hay artistas'
                 });
             } else {
-                res.status(500).send({
-                    artists: result.docs
+                res.status(200).send({
+                    total: artists.total,
+                    pagina: artists.page + ' de ' + artists.pages,
+                    artists: artists.docs
                 });
             }
         }
