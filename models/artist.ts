@@ -1,12 +1,7 @@
 'use strict'
 
-import {Document, model, Model, Schema} from 'mongoose';
-
-const ArtistSchema: Schema = new Schema({
-    name: String,
-    description: String,
-    image: String
-});
+import { PaginateModel, Document, Schema, model } from 'mongoose';
+import * as mongoosePaginate from 'mongoose-paginate';
 
 interface IArtist extends Document {
     name: String;
@@ -14,4 +9,14 @@ interface IArtist extends Document {
     image: String;
 }
 
-export const ArtistModel: Model<IArtist> = model<IArtist>('Artist', ArtistSchema);
+const ArtistSchema: Schema = new Schema({
+    name: String,
+    description: String,
+    image: String
+});
+
+ArtistSchema.plugin(mongoosePaginate);
+
+interface ArtistModel<T extends Document> extends PaginateModel<T> {}
+
+export const ArtistModel: ArtistModel<IArtist> = model<IArtist>('Artist', ArtistSchema);

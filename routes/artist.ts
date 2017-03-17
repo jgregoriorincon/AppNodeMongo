@@ -9,3 +9,4 @@ export const api = express.Router();
 
 api.get('/artist/:id',md_auth, ArtistController.getArtist);
 api.post('/artist',md_auth, ArtistController.saveArtist);
+api.get('/getartists/:page?/:itemspage?',md_auth, ArtistController.getAllArtists);

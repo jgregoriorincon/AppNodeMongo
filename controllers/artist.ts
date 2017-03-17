@@ -2,10 +2,18 @@
 
 import * as path from 'path';
 import * as fs from 'fs';
+import {
+    PaginateModel,
+    Schema,
+    model
+} from 'mongoose';
+import * as mongoosePaginate from 'mongoose-paginate';
 
-import {ArtistModel as Artist} from '../models/artist';
-import {AlbumModel as Album} from '../models/album';
-import {SongModel as Song} from '../models/song';
+import {
+    ArtistModel as Artist
+} from '../models/artist';
+/*import {AlbumModel as Album} from '../models/album';
+import {SongModel as Song} from '../models/song';*/
 
 /**
  * Recupera un artista desde la BD usando el _id
@@ -17,14 +25,20 @@ import {SongModel as Song} from '../models/song';
 export function getArtist(req, res) {
     var artistId = req.params.id;
 
-    Artist.findById(artistId,(err,artist) => {
+    Artist.findById(artistId, (err, artist) => {
         if (err) {
-            res.status(500).send({message: 'Error en la petición'});
+            res.status(500).send({
+                message: 'Error en la petición'
+            });
         } else {
             if (!artist) {
-                res.status(404).send({message: 'El artista no existe'});
+                res.status(404).send({
+                    message: 'El artista no existe'
+                });
             } else {
-                res.status(200).send({artist});
+                res.status(200).send({
+                    artist
+                });
             }
         }
     });
@@ -37,9 +51,9 @@ export function getArtist(req, res) {
  * @param {any} req Datos enviados desde el cliente a través de la API
  * @param {any} res Respuesta generada por los servicios
  */
-export function saveArtist(req,res) {
+export function saveArtist(req, res) {
     var artist = new Artist();
-    
+
     var params = req.body;
     artist.name = params.name;
     artist.description = params.description;
@@ -47,14 +61,61 @@ export function saveArtist(req,res) {
 
     artist.save((err, artistStored) => {
         if (err) {
-            res.status(500).send({message: 'Error al guardar el artista'});
+            res.status(500).send({
+                message: 'Error al guardar el artista'
+            });
         } else {
-            if (!artistStored){
-                res.status(404).send({message: 'El artista no ha sido guardado'});
+            if (!artistStored) {
+                res.status(404).send({
+                    message: 'El artista no ha sido guardado'
+                });
             } else {
-                res.status(200).send({artist: artistStored});
+                res.status(200).send({
+                    artist: artistStored
+                });
             }
         }
     })
 
+}
+
+/**
+ * Recupera todos los artista desde la BD
+ * 
+ * @export
+ * @param {any} req Datos enviados desde el cliente a través de la API
+ * @param {any} res Respuesta generada por los servicios
+ */
+export function getAllArtists(req, res) {
+    let page = req.params.page || 1;
+    let itemsPerPage = req.params.itemspage || 3;
+
+    var query = {};
+    var options = {
+        sort: {
+            name: 1
+        },
+        page: parseInt(page),
+        limit: parseInt(itemsPerPage)
+    };
+
+    console.log(options);
+
+    Artist.paginate(query, options, function (err, result) {
+        if (err) {
+            res.status(500).send({
+                message: 'Error al realizar la petición'
+            });
+        } else {
+            if (!Artist) {
+                res.status(404).send({
+                    message: 'No hay artistas'
+                });
+            } else {
+                res.status(500).send({
+                    artists: result.docs
+                });
+            }
+        }
+    });
 }
