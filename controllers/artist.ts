@@ -88,7 +88,7 @@ export function saveArtist(req, res) {
  */
 export function getAllArtists(req, res) {
     let page = req.params.page || 1;
-    let itemsPerPage = req.params.itemspage || 3;
+    let itemsPerPage = req.params.itemspage || 5;
 
     var query = {};
     var options = {
@@ -98,8 +98,6 @@ export function getAllArtists(req, res) {
         page: parseInt(page),
         limit: parseInt(itemsPerPage)
     };
-
-    console.log(options);
 
     Artist.paginate(query, options, function (err, artists) {
         if (err) {

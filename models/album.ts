@@ -1,8 +1,9 @@
 'use strict'
 
 import {Document, model, Model, Schema} from 'mongoose';
+import {IAlbum} from '../interfaces/album'
 
-export const AlbumSchema:Schema = new Schema({
+const AlbumSchema:Schema = new Schema({
     title: String,
     description: String,
     year: Number,
@@ -12,13 +13,5 @@ export const AlbumSchema:Schema = new Schema({
         ref: 'Artist'
     }
 });
-
-export interface IAlbum extends Document {
-    title: String;
-    description: String;
-    year: Number;
-    image: String;
-    artist: Schema.Types.ObjectId;
-}
 
 export const AlbumModel: Model<IAlbum> = model<IAlbum>('Album', AlbumSchema);

@@ -2,12 +2,7 @@
 
 import { PaginateModel, Document, Schema, model } from 'mongoose';
 import * as mongoosePaginate from 'mongoose-paginate';
-
-interface IArtist extends Document {
-    name: String;
-    description: String;
-    image: String;
-}
+import {IArtist} from '../interfaces/artist'
 
 const ArtistSchema: Schema = new Schema({
     name: String,
