@@ -19,3 +19,14 @@ app.use(bodyParser.json());
 // rutas base
 app.use('/api', user_routes);
 app.use('/api', artist_routes);
+
+import * as multer from 'multer';
+var upload = multer({ dest: 'uploads/' })
+
+app.post('/profile', upload.single('image'), function (req, res, next) {
+  // req.file is the `avatar` file 
+  // req.body will hold the text fields, if there were any 
+  console.log(req.body);
+  console.log(req.file);
+  res.status(200).send({message:'OK'});
+})

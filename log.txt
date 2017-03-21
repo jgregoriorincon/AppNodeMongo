@@ -1,0 +1,44 @@
+
+> appnodemongo@1.0.0 start /Users/johannasalas/AppNodeMongo
+> nodemon index.js
+
+[33m[nodemon] 1.11.0[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching: *.*[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ name: 'Jose', surname: 'Rincon', email: 'jgr@gmail.com' }
+{ fieldname: 'avatar',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: 'uploads/',
+  filename: 'e575a40b4abcb6d384cc240b5f802356',
+  path: 'uploads/e575a40b4abcb6d384cc240b5f802356',
+  size: 1534818 }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ name: 'Jose', surname: 'Rincon', email: 'jgr@gmail.com' }
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: 'uploads/',
+  filename: '2db31626bdab4e11b8982d425adf0135',
+  path: 'uploads/2db31626bdab4e11b8982d425adf0135',
+  size: 1534818 }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
