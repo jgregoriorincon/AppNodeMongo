@@ -21,7 +21,6 @@ var storage = multer.diskStorage({
 var formData = multer({ storage: storage })
 
 export const api = express.Router();
-//var md_upload = multipart({uploadDir: './uploads/users'});
 
 api.get('/validateToken', md_auth, userController.validateToken);
 api.post('/register', formData.single('image'), userController.saveUser);

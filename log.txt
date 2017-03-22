@@ -1,5 +1,5 @@
 
-> appnodemongo@1.0.0 start /Users/josegregoriorincon/Dropbox/github/AppNodeMongo
+> appnodemongo@1.0.0 start /Users/johannasalas/AppNodeMongo
 > nodemon index.js
 
 [33m[nodemon] 1.11.0[39m
@@ -8,390 +8,168 @@
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
-{ email: 'jgra@gmail.com', password: 'gregorio' }
-{ email: 'jgra@gmail.com',
-  password: 'gregorio',
-  getHash: 'true' }
+(node:20011) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '661bbf970258d391100f23ff95c82e15.jpeg',
+  path: 'uploads/users/661bbf970258d391100f23ff95c82e15.jpeg',
+  size: 1534818 }
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'b0002eed627f3de1dab8ef4ead82268a.jpeg',
+  path: 'uploads/users/b0002eed627f3de1dab8ef4ead82268a.jpeg',
+  size: 1534818 }
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'dd23de062c798fa59aef177b0b3dd0a3.jpeg',
+  path: 'uploads/users/dd23de062c798fa59aef177b0b3dd0a3.jpeg',
+  size: 1534818 }
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171096,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:04:53.000Z,
+  mtime: 2017-03-22T11:04:53.000Z,
+  ctime: 2017-03-22T11:04:53.000Z,
+  birthtime: 2017-03-22T11:04:53.000Z }
+Archivo borrado correctamente
+TypeError: Cannot read property 'toLowerCase' of undefined
+    at saveUser (/Users/johannasalas/AppNodeMongo/controllers/user.js:78:30)
+    at Layer.handle [as handle_request] (/Users/johannasalas/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/johannasalas/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Immediate.<anonymous> (/Users/johannasalas/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
+    at runCallback (timers.js:578:20)
+    at tryOnImmediate (timers.js:554:5)
+    at processImmediate [as _immediateCallback] (timers.js:533:5)
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '9ce8b22c9d799151783070915fc5b2d1.jpeg',
+  path: 'uploads/users/9ce8b22c9d799151783070915fc5b2d1.jpeg',
+  size: 1534818 }
+(node:20364) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'c46acae9e15faa36c30f55de65514e43.jpeg',
+  path: 'uploads/users/c46acae9e15faa36c30f55de65514e43.jpeg',
+  size: 1534818 }
 undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
 { fieldname: 'image',
-  originalname: '88217405.jpg',
+  originalname: 'Festival-Vallenato.jpg',
   encoding: '7bit',
   mimetype: 'image/jpeg',
   destination: './uploads/users',
-  filename: '5350b404b0fde7b9f4767b37f1e9d135',
-  path: 'uploads/users/5350b404b0fde7b9f4767b37f1e9d135',
-  size: 79262 }
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-{ fieldname: 'image',
-  originalname: '88217405.jpg',
-  encoding: '7bit',
-  mimetype: 'image/jpeg',
-  destination: './uploads/users',
-  filename: '3a7110eaa12ba8c25700ff0f9e9e8cc1',
-  path: 'uploads/users/3a7110eaa12ba8c25700ff0f9e9e8cc1',
-  size: 79262 }
-{ email: 'jgra@gmail.com', password: 'gregorio' }
-SyntaxError: Unexpected token  in JSON at position 9
-    at Object.parse (native)
-    at Object.jwt_decode [as decode] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/jwt-simple/lib/jwt.js:76:22)
-    at ensureAuth (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/middlewares/authenticated.js:24:27)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
-    at Function.handle (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:174:3)
-    at router (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:47:12)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
-    at expressInit (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/middleware/init.js:40:5)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-SyntaxError: Unexpected token  in JSON at position 9
-    at Object.parse (native)
-    at Object.jwt_decode [as decode] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/jwt-simple/lib/jwt.js:76:22)
-    at ensureAuth (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/middlewares/authenticated.js:24:27)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
-    at Function.handle (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:174:3)
-    at router (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:47:12)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
-    at expressInit (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/middleware/init.js:40:5)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-SyntaxError: Unexpected token # in JSON at position 6
-    at Object.parse (native)
-    at Object.jwt_decode [as decode] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/jwt-simple/lib/jwt.js:76:22)
-    at ensureAuth (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/middlewares/authenticated.js:24:27)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
-    at Function.handle (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:174:3)
-    at router (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:47:12)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
-    at expressInit (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/middleware/init.js:40:5)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-{ fieldname: 'image',
-  originalname: '88217405.jpg',
-  encoding: '7bit',
-  mimetype: 'image/jpeg',
-  destination: './uploads/users',
-  filename: 'ec23cf618757017fb77af4b5b348d5df',
-  path: 'uploads/users/ec23cf618757017fb77af4b5b348d5df',
-  size: 79262 }
-(node:60442) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+  filename: '5b8f6f2a795467d7b583612f675c3593.jpeg',
+  path: 'uploads/users/5b8f6f2a795467d7b583612f675c3593.jpeg',
+  size: 1534818 }
 undefined
-TypeError: Cannot read property 'filename' of undefined
-    at saveUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:43:26)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at Array.<anonymous> (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
-    at listener (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:169:15)
-    at onFinish (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:100:5)
-    at callback (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:55:10)
-    at IncomingMessage.onevent (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:93:5)
-    at emitNone (events.js:86:13)
-    at IncomingMessage.emit (events.js:185:7)
-    at endReadableNT (_stream_readable.js:974:12)
-    at _combinedTickCallback (internal/process/next_tick.js:74:11)
-    at process._tickCallback (internal/process/next_tick.js:98:9)
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '8272013782a8480ca39622e458081755.jpeg',
+  path: 'uploads/users/8272013782a8480ca39622e458081755.jpeg',
+  size: 1534818 }
+{ _id: 58d25c4e6e400350dd5b2ab1 }
+8272013782a8480ca39622e458081755.jpeg
 undefined
-TypeError: Cannot read property 'filename' of undefined
-    at saveUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:43:33)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at Array.<anonymous> (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
-    at listener (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:169:15)
-    at onFinish (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:100:5)
-    at callback (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:55:10)
-    at IncomingMessage.onevent (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:93:5)
-    at emitNone (events.js:86:13)
-    at IncomingMessage.emit (events.js:185:7)
-    at endReadableNT (_stream_readable.js:974:12)
-    at _combinedTickCallback (internal/process/next_tick.js:74:11)
-    at process._tickCallback (internal/process/next_tick.js:98:9)
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-TypeError: Cannot read property 'filename' of undefined
-    at saveUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:35:33)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at Array.<anonymous> (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
-    at listener (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:169:15)
-    at onFinish (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:100:5)
-    at callback (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:55:10)
-    at IncomingMessage.onevent (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:93:5)
-    at emitNone (events.js:86:13)
-    at IncomingMessage.emit (events.js:185:7)
-    at endReadableNT (_stream_readable.js:974:12)
-    at _combinedTickCallback (internal/process/next_tick.js:74:11)
-    at process._tickCallback (internal/process/next_tick.js:98:9)
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-null
-TypeError: Cannot read property 'filename' of undefined
-    at saveUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:43:34)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at Array.<anonymous> (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
-    at listener (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:169:15)
-    at onFinish (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:100:5)
-    at callback (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:55:10)
-    at IncomingMessage.onevent (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:93:5)
-    at emitNone (events.js:86:13)
-    at IncomingMessage.emit (events.js:185:7)
-    at endReadableNT (_stream_readable.js:974:12)
-    at _combinedTickCallback (internal/process/next_tick.js:74:11)
-    at process._tickCallback (internal/process/next_tick.js:98:9)
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-null
-(node:60674) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-paso por aca
-(node:60789) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
----------------------paso por aca
-(node:60847) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
-events.js:160
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: Can't set headers after they are sent.
-    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
-    at ServerResponse.header (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/response.js:725:10)
-    at ServerResponse.send (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/response.js:170:12)
-    at ServerResponse.json (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/response.js:256:15)
-    at ServerResponse.send (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/response.js:158:21)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:87:45
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/mongoose/lib/model.js:3683:16
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/mongoose/lib/services/model/applyHooks.js:146:20
-    at _combinedTickCallback (internal/process/next_tick.js:67:7)
-    at process._tickCallback (internal/process/next_tick.js:98:9)
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-(node:61402) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
-TypeError: Cannot read property 'email' of undefined
-    at loginUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:131:23)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at multerMiddleware (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:18:41)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
-    at Route.dispatch (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:112:3)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:281:22
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
-    at Function.handle (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:174:3)
-    at router (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:47:12)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
-    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
-    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
-    at expressInit (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/middleware/init.js:40:5)
-    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
-    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
-    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
-{ name: 'Goyo' }
-{ name: 'Goyo' }
-{ name: 'Goyo', image: 'd5e65437853f0f8496bca3d0e277548d' }
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node index.js`[39m
-La base de datos dbMusic se encuentra activa...
-Servidor de api rest de musica escuchando en http://localhost:3977
-(node:61830) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
 { fieldname: 'image',
-  originalname: '88217405.jpg',
+  originalname: 'Festival-Vallenato.jpg',
   encoding: '7bit',
   mimetype: 'image/jpeg',
   destination: './uploads/users',
-  filename: 'ace6c4c2f8d838b8f8970c0de7c990b6.jpg',
-  path: 'uploads/users/ace6c4c2f8d838b8f8970c0de7c990b6.jpg',
-  size: 79262 }
-(node:61917) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+  filename: 'b5a0d9ac96e5cb4bfb4acb1e559a72b1.jpeg',
+  path: 'uploads/users/b5a0d9ac96e5cb4bfb4acb1e559a72b1.jpeg',
+  size: 1534818 }
+Usuario: { _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '8272013782a8480ca39622e458081755.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+b5a0d9ac96e5cb4bfb4acb1e559a72b1.jpeg
+undefined
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
@@ -401,51 +179,221 @@ Servidor de api rest de musica escuchando en http://localhost:3977
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
 { fieldname: 'image',
-  originalname: '88217405.jpg',
+  originalname: 'Festival-Vallenato.jpg',
   encoding: '7bit',
   mimetype: 'image/jpeg',
   destination: './uploads/users',
-  filename: '222a34dda12db51731a20e86bc3a87acjpeg',
-  path: 'uploads/users/222a34dda12db51731a20e86bc3a87acjpeg',
-  size: 79262 }
-(node:62025) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+  filename: '83051671c6a6da0cad41200f65342cb4.jpeg',
+  path: 'uploads/users/83051671c6a6da0cad41200f65342cb4.jpeg',
+  size: 1534818 }
+nueva: 83051671c6a6da0cad41200f65342cb4.jpeg
+existente: undefined
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
 { fieldname: 'image',
-  originalname: '88217405.jpg',
+  originalname: 'Festival-Vallenato.jpg',
   encoding: '7bit',
   mimetype: 'image/jpeg',
   destination: './uploads/users',
-  filename: 'f13c2704cd04b9dc28944cb0ec92381c.jpeg',
-  path: 'uploads/users/f13c2704cd04b9dc28944cb0ec92381c.jpeg',
-  size: 79262 }
-(node:62090) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+  filename: '8a52faaae7f275d63ff10721fe4e1455.jpeg',
+  path: 'uploads/users/8a52faaae7f275d63ff10721fe4e1455.jpeg',
+  size: 1534818 }
+Usuario: { _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '83051671c6a6da0cad41200f65342cb4.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+nueva: 8a52faaae7f275d63ff10721fe4e1455.jpeg
+existente: undefined
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
 { fieldname: 'image',
-  originalname: '88217405.jpg',
+  originalname: 'Festival-Vallenato.jpg',
   encoding: '7bit',
   mimetype: 'image/jpeg',
   destination: './uploads/users',
-  filename: '98c7724a273cf443f1ed8496d38c33f7.jpeg',
-  path: 'uploads/users/98c7724a273cf443f1ed8496d38c33f7.jpeg',
-  size: 79262 }
+  filename: '554d55604d4f9c343a8c959d4af44dc3.jpeg',
+  path: 'uploads/users/554d55604d4f9c343a8c959d4af44dc3.jpeg',
+  size: 1534818 }
+nueva: 554d55604d4f9c343a8c959d4af44dc3.jpeg
+existente: 8a52faaae7f275d63ff10721fe4e1455.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171520,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:17:50.000Z,
+  mtime: 2017-03-22T11:17:49.000Z,
+  ctime: 2017-03-22T11:17:49.000Z,
+  birthtime: 2017-03-22T11:17:49.000Z }
+Archivo borrado correctamente
 { fieldname: 'image',
-  originalname: '88217405.jpg',
+  originalname: 'Festival-Vallenato.jpg',
   encoding: '7bit',
   mimetype: 'image/jpeg',
   destination: './uploads/users',
-  filename: 'dd688479b16e26e781ad739f51ef6bf0.jpeg',
-  path: 'uploads/users/dd688479b16e26e781ad739f51ef6bf0.jpeg',
-  size: 79262 }
+  filename: '25befda231966754157592de5409a3e5.jpeg',
+  path: 'uploads/users/25befda231966754157592de5409a3e5.jpeg',
+  size: 1534818 }
+nueva: 25befda231966754157592de5409a3e5.jpeg
+existente: undefined
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
 { fieldname: 'image',
-  originalname: '88217405 copy.png',
+  originalname: 'Festival-Vallenato.jpg',
   encoding: '7bit',
-  mimetype: 'image/png',
+  mimetype: 'image/jpeg',
   destination: './uploads/users',
-  filename: 'a188cc2393b0afda0bf1fe81dbaf191b.png',
-  path: 'uploads/users/a188cc2393b0afda0bf1fe81dbaf191b.png',
-  size: 79262 }
+  filename: '161345c65ed775eaacd79f8fe4dc3c57.jpeg',
+  path: 'uploads/users/161345c65ed775eaacd79f8fe4dc3c57.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '25befda231966754157592de5409a3e5.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+25befda231966754157592de5409a3e5.jpeg
+nueva: 161345c65ed775eaacd79f8fe4dc3c57.jpeg
+existente: 25befda231966754157592de5409a3e5.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171572,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:20:11.000Z,
+  mtime: 2017-03-22T11:20:09.000Z,
+  ctime: 2017-03-22T11:20:09.000Z,
+  birthtime: 2017-03-22T11:20:09.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'ec041af9569134eb6776c73c5a533b3e.jpeg',
+  path: 'uploads/users/ec041af9569134eb6776c73c5a533b3e.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '161345c65ed775eaacd79f8fe4dc3c57.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+161345c65ed775eaacd79f8fe4dc3c57.jpeg
+nueva: ec041af9569134eb6776c73c5a533b3e.jpeg
+existente: 161345c65ed775eaacd79f8fe4dc3c57.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171605,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:21:42.000Z,
+  mtime: 2017-03-22T11:21:41.000Z,
+  ctime: 2017-03-22T11:21:41.000Z,
+  birthtime: 2017-03-22T11:21:41.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '41a16efe93342f178959177892ecf357.jpeg',
+  path: 'uploads/users/41a16efe93342f178959177892ecf357.jpeg',
+  size: 1534818 }
+nueva: 41a16efe93342f178959177892ecf357.jpeg
+existente: undefined
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: 'ec041af9569134eb6776c73c5a533b3e.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+ec041af9569134eb6776c73c5a533b3e.jpeg
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '859856bf5e298629ca7f96216e2d2bd4.jpeg',
+  path: 'uploads/users/859856bf5e298629ca7f96216e2d2bd4.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '41a16efe93342f178959177892ecf357.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+41a16efe93342f178959177892ecf357.jpeg
+nueva: 859856bf5e298629ca7f96216e2d2bd4.jpeg
+existente: 41a16efe93342f178959177892ecf357.jpeg
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/41a16efe93342f178959177892ecf357.jpeg'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/41a16efe93342f178959177892ecf357.jpeg' }
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
@@ -455,11 +403,384 @@ Servidor de api rest de musica escuchando en http://localhost:3977
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
 { fieldname: 'image',
-  originalname: '88217405.jpg',
+  originalname: 'Festival-Vallenato.jpg',
   encoding: '7bit',
   mimetype: 'image/jpeg',
   destination: './uploads/users',
-  filename: '53bbf9fb2734969ac97694e49b2bdc3d.jpeg',
-  path: 'uploads/users/53bbf9fb2734969ac97694e49b2bdc3d.jpeg',
-  size: 79262 }
-(node:62235) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+  filename: '300e022936c40df253be19a586dcee7d.jpeg',
+  path: 'uploads/users/300e022936c40df253be19a586dcee7d.jpeg',
+  size: 1534818 }
+nueva: 300e022936c40df253be19a586dcee7d.jpeg
+existente: 859856bf5e298629ca7f96216e2d2bd4.jpeg
+archivo a borrar:859856bf5e298629ca7f96216e2d2bd4.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171653,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:23:21.000Z,
+  mtime: 2017-03-22T11:23:20.000Z,
+  ctime: 2017-03-22T11:23:20.000Z,
+  birthtime: 2017-03-22T11:23:20.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '14cbbec06150b9409b3d5fb08f102410.jpeg',
+  path: 'uploads/users/14cbbec06150b9409b3d5fb08f102410.jpeg',
+  size: 1534818 }
+nueva: 14cbbec06150b9409b3d5fb08f102410.jpeg
+existente: 300e022936c40df253be19a586dcee7d.jpeg
+archivo a borrar:300e022936c40df253be19a586dcee7d.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171698,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:25:30.000Z,
+  mtime: 2017-03-22T11:25:29.000Z,
+  ctime: 2017-03-22T11:25:29.000Z,
+  birthtime: 2017-03-22T11:25:29.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'b8fad73a9afa8eaad0e232998f78bc05.jpeg',
+  path: 'uploads/users/b8fad73a9afa8eaad0e232998f78bc05.jpeg',
+  size: 1534818 }
+nueva: b8fad73a9afa8eaad0e232998f78bc05.jpeg
+existente: 14cbbec06150b9409b3d5fb08f102410.jpeg
+archivo a borrar:14cbbec06150b9409b3d5fb08f102410.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171713,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:25:47.000Z,
+  mtime: 2017-03-22T11:25:46.000Z,
+  ctime: 2017-03-22T11:25:46.000Z,
+  birthtime: 2017-03-22T11:25:46.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '75e77309ac447e1a0334485607c0b440.jpeg',
+  path: 'uploads/users/75e77309ac447e1a0334485607c0b440.jpeg',
+  size: 1534818 }
+nueva: 75e77309ac447e1a0334485607c0b440.jpeg
+existente: b8fad73a9afa8eaad0e232998f78bc05.jpeg
+archivo a borrar:b8fad73a9afa8eaad0e232998f78bc05.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171732,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:26:08.000Z,
+  mtime: 2017-03-22T11:26:07.000Z,
+  ctime: 2017-03-22T11:26:07.000Z,
+  birthtime: 2017-03-22T11:26:07.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '71c0e1ec37f554601923574babb376bf.jpeg',
+  path: 'uploads/users/71c0e1ec37f554601923574babb376bf.jpeg',
+  size: 1534818 }
+nueva: 71c0e1ec37f554601923574babb376bf.jpeg
+existente: undefined
+archivo a borrar:undefined
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '5f110dc1ad6008df37a67262c9e1856f.jpeg',
+  path: 'uploads/users/5f110dc1ad6008df37a67262c9e1856f.jpeg',
+  size: 1534818 }
+nueva: 5f110dc1ad6008df37a67262c9e1856f.jpeg
+existente: undefined
+archivo a borrar:undefined
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '2a8f3796e7bdef33ad76e0e159ed013d.jpeg',
+  path: 'uploads/users/2a8f3796e7bdef33ad76e0e159ed013d.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '5f110dc1ad6008df37a67262c9e1856f.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+nueva: 2a8f3796e7bdef33ad76e0e159ed013d.jpeg
+existente: 5f110dc1ad6008df37a67262c9e1856f.jpeg
+archivo a borrar:5f110dc1ad6008df37a67262c9e1856f.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171765,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:26:39.000Z,
+  mtime: 2017-03-22T11:26:38.000Z,
+  ctime: 2017-03-22T11:26:38.000Z,
+  birthtime: 2017-03-22T11:26:38.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '934139ddfcc33f40fc9b1a4854f210b4.jpeg',
+  path: 'uploads/users/934139ddfcc33f40fc9b1a4854f210b4.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '2a8f3796e7bdef33ad76e0e159ed013d.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+nueva: 934139ddfcc33f40fc9b1a4854f210b4.jpeg
+existente: 2a8f3796e7bdef33ad76e0e159ed013d.jpeg
+archivo a borrar:2a8f3796e7bdef33ad76e0e159ed013d.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171792,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:27:37.000Z,
+  mtime: 2017-03-22T11:27:36.000Z,
+  ctime: 2017-03-22T11:27:36.000Z,
+  birthtime: 2017-03-22T11:27:36.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '17ade5dd64f1d62e123a8ea873797e36.jpeg',
+  path: 'uploads/users/17ade5dd64f1d62e123a8ea873797e36.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '934139ddfcc33f40fc9b1a4854f210b4.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+nueva: 17ade5dd64f1d62e123a8ea873797e36.jpeg
+existente: 934139ddfcc33f40fc9b1a4854f210b4.jpeg
+archivo a borrar:934139ddfcc33f40fc9b1a4854f210b4.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171806,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:27:52.000Z,
+  mtime: 2017-03-22T11:27:51.000Z,
+  ctime: 2017-03-22T11:27:51.000Z,
+  birthtime: 2017-03-22T11:27:51.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '839159cbae9cdab07dbdc437e3f0179f.jpeg',
+  path: 'uploads/users/839159cbae9cdab07dbdc437e3f0179f.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '17ade5dd64f1d62e123a8ea873797e36.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+nueva: 839159cbae9cdab07dbdc437e3f0179f.jpeg
+existente: 17ade5dd64f1d62e123a8ea873797e36.jpeg
+archivo a borrar:17ade5dd64f1d62e123a8ea873797e36.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171812,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:27:57.000Z,
+  mtime: 2017-03-22T11:27:56.000Z,
+  ctime: 2017-03-22T11:27:56.000Z,
+  birthtime: 2017-03-22T11:27:56.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'c1a252d1d3da905a80273ccdc730e4f7.jpeg',
+  path: 'uploads/users/c1a252d1d3da905a80273ccdc730e4f7.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '839159cbae9cdab07dbdc437e3f0179f.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+nueva: c1a252d1d3da905a80273ccdc730e4f7.jpeg
+existente: 839159cbae9cdab07dbdc437e3f0179f.jpeg
+archivo a borrar:839159cbae9cdab07dbdc437e3f0179f.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171815,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:28:00.000Z,
+  mtime: 2017-03-22T11:27:59.000Z,
+  ctime: 2017-03-22T11:27:59.000Z,
+  birthtime: 2017-03-22T11:27:59.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '71d9e87329108d9c6943e6d441ad673c.jpeg',
+  path: 'uploads/users/71d9e87329108d9c6943e6d441ad673c.jpeg',
+  size: 1534818 }
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: 'c1a252d1d3da905a80273ccdc730e4f7.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+nueva: 71d9e87329108d9c6943e6d441ad673c.jpeg
+existente: c1a252d1d3da905a80273ccdc730e4f7.jpeg
+archivo a borrar:c1a252d1d3da905a80273ccdc730e4f7.jpeg
+{ dev: 16777221,
+  mode: 33188,
+  nlink: 1,
+  uid: 501,
+  gid: 20,
+  rdev: 0,
+  blksize: 4096,
+  ino: 2171822,
+  size: 1534818,
+  blocks: 3000,
+  atime: 2017-03-22T11:28:02.000Z,
+  mtime: 2017-03-22T11:28:01.000Z,
+  ctime: 2017-03-22T11:28:01.000Z,
+  birthtime: 2017-03-22T11:28:01.000Z }
+Archivo borrado correctamente
+{ fieldname: 'image',
+  originalname: 'Festival-Vallenato.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '33a283b65b62c4f5e8d734f429b639ff.jpeg',
+  path: 'uploads/users/33a283b65b62c4f5e8d734f429b639ff.jpeg',
+  size: 1534818 }
+nueva: 33a283b65b62c4f5e8d734f429b639ff.jpeg
+existente: undefined
+archivo a borrar:undefined
+{ _id: 58d25abffc62444f8cd3cc28,
+  password: '$2a$10$kIAX4oKjqh6mAjyLIBVbIe/DXMwMo.PSW/jvXF9LeCfcbyD2e3bza',
+  image: '71d9e87329108d9c6943e6d441ad673c.jpeg',
+  role: 'ROLE_USER',
+  email: 'jgr@gmail.com',
+  surname: 'Rincon',
+  __v: 0,
+  name: 'Jose' }
+undefined
+{ Error: ENOENT: no such file or directory, stat './uploads/users/undefined'
+    at Error (native)
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: './uploads/users/undefined' }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977

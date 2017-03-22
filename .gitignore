@@ -46,4 +46,4 @@ jspm_packages
 *.js.map
 
 #carpeta de archivos subidos
-uploads
+uploads/users/
