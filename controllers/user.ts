@@ -13,11 +13,36 @@ import {createToken} from '../services/jwt';
  * @param {any} req Datos enviados desde el cliente a través de la API
  * @param {any} res Respuesta generada por los servicios
  */
-export function getToken(req, res) {
+export function validateToken(req, res) {
     var params = req.body;
     res.status(200).send({
-        message: 'Ingreso al token'
+        message: 'Token Valido'
     });
+}
+
+/**
+ * Valida el archivo recibido
+ * 
+ * @param {any} fileImage 
+ * @returns 
+ */
+function validaImagen(fileImage) {
+    var image:string;
+    if (typeof fileImage === 'undefined') {
+        image = 'null'; 
+    } else {
+        switch (fileImage.mimetype) {
+            case 'image/jpeg':
+            case 'image/png':
+            case 'image/gif':
+                console.log(fileImage);
+                image = fileImage.filename;
+                break;
+            default:
+                image = 'undefined';
+        }
+    }
+    return image;
 }
 
 /**
@@ -42,7 +67,14 @@ export function saveUser(req, res) {
     user.surname = params.surname;
     user.email = params.email.toLowerCase();
     user.role = 'ROLE_USER';
-    user.image = 'null';
+    user.image = validaImagen(req.file);
+
+    if (user.image == 'undefined') {
+        res.status(500).send({
+            message: 'Error de proceso: Formato del archivo no valida'
+        });
+        return;
+    }
 
     /**
     * Si se envia contraseña se continua
@@ -99,7 +131,6 @@ export function saveUser(req, res) {
  */
 export function loginUser(req, res) {
     var params = req.body;
-
     var email = params.email;
     var password = params.password;
 
@@ -153,6 +184,16 @@ export function updateUser(req, res) {
     var userId = req.params.id;
     var update = req.body;
 
+    var image = validaImagen(req.file);
+    if (image == 'undefined') {
+        res.status(500).send({
+            message: 'Error de proceso: Formato del archivo de imagén no valido'
+        });
+        return;
+    } else {
+        update.image = image;
+    }
+
     // Busca en la BD por el Id recuperado al hacer el login 
     User.findByIdAndUpdate(userId, update, (err, userUpdate) => {
         if (err) {
@@ -171,62 +212,6 @@ export function updateUser(req, res) {
             }
         }
     });
-}
-
-/**
- * Carga una imagen a la ruta definida y actualiza la BD con el nombre de la imagen
- * 
- * @export
- * @param {any} req Datos enviados desde el cliente a través de la API
- * @param {any} res Respuesta generada por los servicios
- */
-export function uploadImage(req, res) {
-    var userId = req.params.id;
-
-    // si llegan archivos por /uploadImageUser/:id
-    if (req.files) {
-        // Recupera la ruta, el nombre del archivo y de la Extensión
-        let filePath = req.files.image.path;
-        let filePathSplit = filePath.split('/');
-        let fileName = filePathSplit[filePathSplit.length - 1];
-        let fileNameSplit = fileName.split('.');
-        let fileExt = fileNameSplit[fileNameSplit.length - 1].toLowerCase();
-
-        // Valida el tipo de extensión de la imagen
-        switch (fileExt) {
-            case 'jpg':
-            case 'jpeg':
-            case 'png':
-            case 'gif':
-                // Busca el usuario y actualiza el campo image
-                User.findByIdAndUpdate(userId, {image: fileName}, (err, userUpdate) => {
-                    if (err) {
-                        res.status(500).send({
-                            message: 'Error al actualizar el usuario'
-                        });
-                    } else {
-                        if (!userUpdate) {
-                            res.status(404).send({
-                                message: 'No se ha podido actualizar el usuario'
-                            });
-                        } else {
-                            res.status(200).send({
-                                user: userUpdate
-                            });
-                        }
-                    }
-                });
-                break;
-            default:
-                res.status(500).send({
-                    message: 'Extensión del archivo no valida'
-                });
-        }
-    } else {
-        res.status(500).send({
-            message: 'No se ha cargado imagen'
-        });
-    }
 }
 
 /**

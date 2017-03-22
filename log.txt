@@ -1,5 +1,5 @@
 
-> appnodemongo@1.0.0 start /Users/johannasalas/AppNodeMongo
+> appnodemongo@1.0.0 start /Users/josegregoriorincon/Dropbox/github/AppNodeMongo
 > nodemon index.js
 
 [33m[nodemon] 1.11.0[39m
@@ -8,28 +8,63 @@
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
-{ name: 'Jose', surname: 'Rincon', email: 'jgr@gmail.com' }
-{ fieldname: 'avatar',
-  originalname: 'Festival-Vallenato.jpg',
-  encoding: '7bit',
-  mimetype: 'image/jpeg',
-  destination: 'uploads/',
-  filename: 'e575a40b4abcb6d384cc240b5f802356',
-  path: 'uploads/e575a40b4abcb6d384cc240b5f802356',
-  size: 1534818 }
+{ email: 'jgra@gmail.com', password: 'gregorio' }
+{ email: 'jgra@gmail.com',
+  password: 'gregorio',
+  getHash: 'true' }
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
-{ name: 'Jose', surname: 'Rincon', email: 'jgr@gmail.com' }
+undefined
 { fieldname: 'image',
-  originalname: 'Festival-Vallenato.jpg',
+  originalname: '88217405.jpg',
   encoding: '7bit',
   mimetype: 'image/jpeg',
-  destination: 'uploads/',
-  filename: '2db31626bdab4e11b8982d425adf0135',
-  path: 'uploads/2db31626bdab4e11b8982d425adf0135',
-  size: 1534818 }
+  destination: './uploads/users',
+  filename: '5350b404b0fde7b9f4767b37f1e9d135',
+  path: 'uploads/users/5350b404b0fde7b9f4767b37f1e9d135',
+  size: 79262 }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: '88217405.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '3a7110eaa12ba8c25700ff0f9e9e8cc1',
+  path: 'uploads/users/3a7110eaa12ba8c25700ff0f9e9e8cc1',
+  size: 79262 }
+{ email: 'jgra@gmail.com', password: 'gregorio' }
+SyntaxError: Unexpected token  in JSON at position 9
+    at Object.parse (native)
+    at Object.jwt_decode [as decode] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/jwt-simple/lib/jwt.js:76:22)
+    at ensureAuth (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/middlewares/authenticated.js:24:27)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
@@ -42,3 +77,389 @@ Servidor de api rest de musica escuchando en http://localhost:3977
 [32m[nodemon] starting `node index.js`[39m
 La base de datos dbMusic se encuentra activa...
 Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+SyntaxError: Unexpected token  in JSON at position 9
+    at Object.parse (native)
+    at Object.jwt_decode [as decode] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/jwt-simple/lib/jwt.js:76:22)
+    at ensureAuth (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/middlewares/authenticated.js:24:27)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+SyntaxError: Unexpected token # in JSON at position 6
+    at Object.parse (native)
+    at Object.jwt_decode [as decode] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/jwt-simple/lib/jwt.js:76:22)
+    at ensureAuth (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/middlewares/authenticated.js:24:27)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: '88217405.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'ec23cf618757017fb77af4b5b348d5df',
+  path: 'uploads/users/ec23cf618757017fb77af4b5b348d5df',
+  size: 79262 }
+(node:60442) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+undefined
+TypeError: Cannot read property 'filename' of undefined
+    at saveUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:43:26)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Array.<anonymous> (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
+    at listener (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:169:15)
+    at onFinish (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:100:5)
+    at callback (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:55:10)
+    at IncomingMessage.onevent (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:93:5)
+    at emitNone (events.js:86:13)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+undefined
+TypeError: Cannot read property 'filename' of undefined
+    at saveUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:43:33)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Array.<anonymous> (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
+    at listener (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:169:15)
+    at onFinish (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:100:5)
+    at callback (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:55:10)
+    at IncomingMessage.onevent (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:93:5)
+    at emitNone (events.js:86:13)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+TypeError: Cannot read property 'filename' of undefined
+    at saveUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:35:33)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Array.<anonymous> (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
+    at listener (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:169:15)
+    at onFinish (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:100:5)
+    at callback (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:55:10)
+    at IncomingMessage.onevent (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:93:5)
+    at emitNone (events.js:86:13)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+null
+TypeError: Cannot read property 'filename' of undefined
+    at saveUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:43:34)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Array.<anonymous> (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:53:37)
+    at listener (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:169:15)
+    at onFinish (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/on-finished/index.js:100:5)
+    at callback (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:55:10)
+    at IncomingMessage.onevent (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/ee-first/index.js:93:5)
+    at emitNone (events.js:86:13)
+    at IncomingMessage.emit (events.js:185:7)
+    at endReadableNT (_stream_readable.js:974:12)
+    at _combinedTickCallback (internal/process/next_tick.js:74:11)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+null
+(node:60674) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+paso por aca
+(node:60789) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+---------------------paso por aca
+(node:60847) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:356:11)
+    at ServerResponse.header (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/response.js:725:10)
+    at ServerResponse.send (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/response.js:170:12)
+    at ServerResponse.json (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/response.js:256:15)
+    at ServerResponse.send (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/response.js:158:21)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:87:45
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/mongoose/lib/model.js:3683:16
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/mongoose/lib/services/model/applyHooks.js:146:20
+    at _combinedTickCallback (internal/process/next_tick.js:67:7)
+    at process._tickCallback (internal/process/next_tick.js:98:9)
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+(node:61402) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+TypeError: Cannot read property 'email' of undefined
+    at loginUser (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/controllers/user.js:131:23)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at multerMiddleware (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/multer/lib/make-middleware.js:18:41)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
+    at Function.handle (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:174:3)
+    at router (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:335:12)
+    at next (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:275:10)
+    at expressInit (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/middleware/init.js:40:5)
+    at Layer.handle [as handle_request] (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:317:13)
+    at /Users/josegregoriorincon/Dropbox/github/AppNodeMongo/node_modules/express/lib/router/index.js:284:7
+{ name: 'Goyo' }
+{ name: 'Goyo' }
+{ name: 'Goyo', image: 'd5e65437853f0f8496bca3d0e277548d' }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+(node:61830) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: '88217405.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'ace6c4c2f8d838b8f8970c0de7c990b6.jpg',
+  path: 'uploads/users/ace6c4c2f8d838b8f8970c0de7c990b6.jpg',
+  size: 79262 }
+(node:61917) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: '88217405.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '222a34dda12db51731a20e86bc3a87acjpeg',
+  path: 'uploads/users/222a34dda12db51731a20e86bc3a87acjpeg',
+  size: 79262 }
+(node:62025) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: '88217405.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'f13c2704cd04b9dc28944cb0ec92381c.jpeg',
+  path: 'uploads/users/f13c2704cd04b9dc28944cb0ec92381c.jpeg',
+  size: 79262 }
+(node:62090) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
+{ fieldname: 'image',
+  originalname: '88217405.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '98c7724a273cf443f1ed8496d38c33f7.jpeg',
+  path: 'uploads/users/98c7724a273cf443f1ed8496d38c33f7.jpeg',
+  size: 79262 }
+{ fieldname: 'image',
+  originalname: '88217405.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: 'dd688479b16e26e781ad739f51ef6bf0.jpeg',
+  path: 'uploads/users/dd688479b16e26e781ad739f51ef6bf0.jpeg',
+  size: 79262 }
+{ fieldname: 'image',
+  originalname: '88217405 copy.png',
+  encoding: '7bit',
+  mimetype: 'image/png',
+  destination: './uploads/users',
+  filename: 'a188cc2393b0afda0bf1fe81dbaf191b.png',
+  path: 'uploads/users/a188cc2393b0afda0bf1fe81dbaf191b.png',
+  size: 79262 }
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `node index.js`[39m
+La base de datos dbMusic se encuentra activa...
+Servidor de api rest de musica escuchando en http://localhost:3977
+{ fieldname: 'image',
+  originalname: '88217405.jpg',
+  encoding: '7bit',
+  mimetype: 'image/jpeg',
+  destination: './uploads/users',
+  filename: '53bbf9fb2734969ac97694e49b2bdc3d.jpeg',
+  path: 'uploads/users/53bbf9fb2734969ac97694e49b2bdc3d.jpeg',
+  size: 79262 }
+(node:62235) DeprecationWarning: Mongoose: mpromise (mongoose's default promise library) is deprecated, plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
